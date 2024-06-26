@@ -13,3 +13,9 @@ resource "local_file" "Users" {
 data "local_file" "data_source" {
   filename = "./data_source.txt"
 }
+
+resource "local_file" "for_each" {
+  for_each = toset(var.file_names)
+  filename = each.value
+  content  = "This is from ${each.value}"
+}

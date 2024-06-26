@@ -54,3 +54,14 @@ variable "tuple_value" {
   type    = tuple([string, number, bool])
   default = ["index0", 1, true]
 }
+
+
+/* For each */
+variable "file_names" {
+  type = list(string)
+  default = [
+    "for-each/a.txt",
+    "for-each/b.txt",
+    "for-each/c.txt",
+  ]
+}
