@@ -1,0 +1,1 @@
+String: This is a string!, Number: 42, Bool: true, List: index0, index1, index2, Set: index0, index1, index2, Map: {"age":"22","name":"Bhishman"}, Object: {"age":22,"name":"Bhishman"}, Tuple: index0, 1, true

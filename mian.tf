@@ -1,9 +1,4 @@
-resource "local_file" "pets" {
-  filename = "./pet.txt"
-  content  = var.content
-}
-
-resource "local_file" "testing_variables" {
-  filename = "./testing_variables.txt"
-  content = "Accessing value at index 2: ${var.list[2]} and this is the map age: ${var.map["age"]}"
+resource "local_file" "all_variables" {
+  filename = "./all_variables.txt"
+  content  = "String: ${var.string_value}, Number: ${var.number_value}, Bool: ${var.bool_value}, List: ${join(", ", var.list_value)}, Set: ${join(", ", var.set_value)}, Map: ${jsonencode(var.map_value)}, Object: ${jsonencode(var.object_value)}, Tuple: ${join(", ", var.tuple_value)}"
 }

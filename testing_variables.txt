@@ -1,1 +1,0 @@
-Accessing value at index 2: index2 and this is the map age: 22
