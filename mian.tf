@@ -7,5 +7,5 @@ resource "random_uuid" "userId" {}
 
 resource "local_file" "Users" {
   filename = "./user.txt"
-  content = "The user id is: ${random_uuid.userId.id}"
+  content  = "The user id is: ${random_uuid.userId.id}"
 }

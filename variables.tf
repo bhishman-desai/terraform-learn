@@ -51,6 +51,6 @@ variable "object_value" {
 
 /* Variable of tuple type */
 variable "tuple_value" {
-  type = tuple([string, number, bool])
+  type    = tuple([string, number, bool])
   default = ["index0", 1, true]
 }
