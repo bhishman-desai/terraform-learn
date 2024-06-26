@@ -1,1 +1,2 @@
-The user id is: d5af9534-807f-6ef2-9468-2f3c712dcc41
+The user id is: d5af9534-807f-6ef2-9468-2f3c712dcc41 
+Data source resource: This is an external resource which can be created manually or some other IaC tool such as cloudformation.

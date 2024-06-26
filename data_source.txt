@@ -1,0 +1,1 @@
+This is an external resource which can be created manually or some other IaC tool such as cloudformation.

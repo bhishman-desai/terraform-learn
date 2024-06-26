@@ -30,9 +30,9 @@ yarn-error.log*
 # Local .terraform directories
 **/.terraform/*
 
-# .tfstate files
-# *.tfstate
-# *.tfstate.*
+# .tfstate files - push these files to some secured stortage like terraform cloud
+*.tfstate
+*.tfstate.*
 
 # Crash log files
 crash.log

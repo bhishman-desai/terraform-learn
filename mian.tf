@@ -7,5 +7,9 @@ resource "random_uuid" "userId" {}
 
 resource "local_file" "Users" {
   filename = "./user.txt"
-  content  = "The user id is: ${random_uuid.userId.id}"
+  content  = "The user id is: ${random_uuid.userId.id} \nData source resource: ${data.local_file.data_source.content}"
+}
+
+data "local_file" "data_source" {
+  filename = "./data_source.txt"
 }
